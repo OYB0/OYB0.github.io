@@ -1,27 +1,57 @@
 <!DOCTYPE html>
-<html lang="ar">
+
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تسجيل الدخول</title>
-    <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>لكي سيدتي</title>
+
 </head>
+
 <body>
-    <div class="login-container">
-        <h2>تسجيل الدخول</h2>
-        <form id="loginForm">
-            <div class="input-group">
-                <label for="username">اسم المستخدم</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">كلمة المرور</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">دخول</button>
-        </form>
-        <p id="errorMsg" class="error-msg"></p>
+
+  <div class="container">
+
+    <img class="profile-image" src="https://cdn.glitch.global/af0d59a9-47b9-40a0-b23c-727997052e7e/mymom.jpg?v=1708649969741" alt="WhatsApp Image">
+
+    <p class="profile-text">لكي سيدتي</p>
+
+    <div class="social-buttons">
+
+      <a href="oyb.html"><img class="small-image" src="https://cdn.glitch.global/af0d59a9-47b9-40a0-b23c-727997052e7e/whatsapp.png?v=1708647332286" alt="WhatsApp"></a>
+
+      <a href="https://www.instagram.com/101_moon_/" target="_blank"><img class="small-image" src="https://cdn.glitch.global/af0d59a9-47b9-40a0-b23c-727997052e7e/instagram.png?v=1708647338381" alt="Instagram"></a>
+
     </div>
-    <script src="script.js"></script>
+
+    <p class="profile-info">حسابات لكي سيدتي بالأعلى </p>
+
+    <div class="copyright">
+
+      <p class="copyright-text" onclick="redirectToLicense()">حقوق الطبع والنشر محفوظة. معرفة المزيد</p>
+
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+
+  <script>
+
+    function redirectToLicense() {
+
+      window.location.href = 'الترخيص.txt';
+
+    }
+
+  </script>
+
 </body>
+
 </html>
