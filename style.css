@@ -1,58 +1,194 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+
+  font-family: Arial, sans-serif;
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  background-color: #fdd6e3; /* لون وردي فاتح */
+
+  color: #333333;
+
 }
 
-.login-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+.container {
+
+  max-width: 600px;
+
+  margin: 50px auto;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  padding: 20px;
+
+  text-align: center;
+
 }
 
-.login-container h2 {
-    margin-bottom: 20px;
-    text-align: center;
+.profile-image {
+
+  width: 150px;
+
+  height: 150px;
+
+  border-radius: 50%;
+
+  margin-bottom: 20px;
+
 }
 
-.input-group {
-    margin-bottom: 15px;
+.profile-text {
+
+  font-size: 18px;
+
 }
 
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
+.social-buttons {
+
+  margin-top: 20px;
+
 }
 
-.input-group input {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
+.small-image,
+
+.medium-image {
+
+  width: 50px;
+
+  height: 50px;
+
+  margin: 0 5px;
+
+  cursor: pointer;
+
+  transition: transform 0.3s;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+.small-image img,
+
+.medium-image img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  border-radius: 50%;
+
 }
 
-button:hover {
-    background-color: #0056b3;
+.small-image:hover,
+
+.medium-image:hover {
+
+  transform: scale(1.1);
+
 }
 
-.error-msg {
-    color: red;
-    text-align: center;
-    margin-top: 10px;
+.whatsapp-images {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+
+}
+
+.whatsapp-images .medium-image {
+
+  width: 75px;
+
+  height: 75px;
+
+}
+
+.whatsapp-info,
+
+.profile-info {
+
+  font-size: 16px;
+
+  color: #666666;
+
+  margin-top: 20px;
+
+}
+
+/* ألوان جميلة لتحسين الأناقة */
+
+.container {
+
+  background-color: #ffe6f1; /* لون وردي فاتح */
+
+  color: #444;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.profile-text,
+
+.profile-info {
+
+  color: #555;
+
+}
+
+.social-buttons a {
+
+  background-color: #ff80ab; /* لون وردي غامق */
+
+  color: #fff;
+
+  border-radius: 5px;
+
+  padding: 5px 10px;
+
+  text-decoration: none;
+
+  transition: background-color 0.3s;
+
+}
+
+.social-buttons a:hover {
+
+  background-color: #ff3399; /* لون وردي غامق أكثر */
+
+}
+/* تعديلات لنص حقوق الطبع */
+
+.copyright {
+
+  background-color: #000; /* لون الخلفية (أسود) */
+
+  padding: 10px; /* هامش داخلي لتحسين المظهر */
+
+  position: absolute;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+  color: #fff; /* لون النص (أبيض) */
+
 }
