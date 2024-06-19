@@ -8,6 +8,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     if (username === 'user' && password === 'password') {
         alert('تم تسجيل الدخول بنجاح!');
         errorMsg.textContent = '';
+        window.location.href = 'hhhhh.html';
     } else {
         errorMsg.textContent = 'اسم المستخدم أو كلمة المرور غير صحيحة';
     }
